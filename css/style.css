@@ -1,0 +1,106 @@
+body, h1, label, input, article {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #914caf;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #a04caf;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #782e7d;
+    outline: none;
+}
+
+input[type="button"] {
+    padding: 10px 15px;
+    background-color: #a34caf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #8b388e;
+}
+
+.container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+}
+
+.container img {
+    max-width: 100%; /* La imagen se ajusta al ancho del contenedor */
+    max-height: 100%; /* La imagen se ajusta a la altura del contenedor */
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta si es necesario */
+}
+
+.container:nth-child(odd) {
+    background-color: #e3f2fd;
+}
+
+.container:nth-child(even) {
+    background-color: #fff3e0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
